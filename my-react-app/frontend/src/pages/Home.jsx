@@ -28,7 +28,7 @@ const Home = () => {
                  setIsSignUp={setIsSignUp}/>
             <div className='home'>
 
-                <h1>Find a DATE</h1>
+                <h1 className='primary-title'>FIND A <span className='date'>DATE</span> FOR YOUR <span className='pet'>PET</span></h1>
                 <button className='primary-button' onClick={handleClick}>
                     {authToken ? 'Signout' : 'Create Account'}
                 </button>
@@ -39,4 +39,8 @@ const Home = () => {
 
             </div>
         </div>
- 
+        
+    )
+}
+
+export default Home
